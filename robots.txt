@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets
+Dissalow: /engine
+Dissalow: /log

@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Moscow Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon">
+    <meta name="keywords" content="gta, san andreas по интернету, samp, youtube, etrp.ru, eternity rp, multiplayer, erp">
+    <meta name="description" content="Лучший проект GTA San Andreas Multiplayer, чтобы начать играть в GTA SAMP по интернету">
+    <noscript><meta http-equiv="refresh" content="0; URL=https://vk.com/moscow_r_p"></noscript>
+    <link href="http://etrp.ru/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://etrp.ru/assets/css/stylesheet.css" rel="stylesheet">
+    <link href="http://etrp.ru/assets/css/reset.css" rel="stylesheet">
+    <link href="http://etrp.ru/assets/css/style.css" rel="stylesheet">
+    <link href="http://etrp.ru/assets/css/style-less.css" rel="stylesheet">
+    <link href="http://etrp.ru/assets/css/jquery.scrollbar.css" rel="stylesheet">
+	<link href="http://etrp.ru/assets/css/toastr.min.css" rel="stylesheet">
+    <script src="http://etrp.ru/assets/js/jquery.min.js"></script>	
+</head>
+<body class='homepage'>
+<div id="header">
+    <div class="burger-menu" data-toggle="modal" data-target="#burgermainmenu" data-dismiss="modal">
+        <div class="burger-click-region"> <span class="burger-menu-piece"></span> <span class="burger-menu-piece"></span> <span class="burger-menu-piece"></span> </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!--<a href="/" class="logo"><img src="" title="Главная страница" width="268"></a>-->
+            </div>
+            <div class="col-md-9">
+                <ul class="main-menu">
+                    <li>
+                        <a href="../index.html"><img src="../images/ico-pay-home.svg"> Главная</a>
+                    </li>
+                    <li>
+                        <a href="http://moscow-rp.tk" target="_blank"><img src="../images/mi-forum.svg"> Форум</a>
+                    </li>
+                    <li>
+                        <a href="../login/index.html"><img src="../images/mi-userroom.svg"> Личный&nbsp;кабинет</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="../images/mi-donate.svg"> Донат</a>
+                    </li>
+                    <li>
+                        <a href="../how-to-start/index.html"><img src="../images/mi-how.svg"> Как&nbsp;начать&nbsp;играть</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content" class="content">
+    <div class="container-fluid">
+        <div class="middle-width">
+            <h1 class="textcenter" style="color: #fff;text-transform: uppercase">Донат</h1>
+            <div class="enterserver-wrap">
+                <div class="loginwarn serverwarn bad">
+                    <p><strong>Ошибка</strong><br>Выберите сервер!</p>
+				</div>
+				<div class="server-item">
+					<input type="radio" class="radio" name="enterserver" id="dominant" value="https://unitpay.ru/pay/125981-dd3f4?">
+					<label for="dominant"><img class="color-img" src="../images/server.svg" alt=""> Rock</label>
+				</div>
+            </div>
+            <div class="enterserver-select-wrap">
+                <div class="loginwarn serverwarn bad">
+                    <p><strong>Ошибка</strong><br>Выберите сервер!</p>
+                </div>
+                <select class="enterserver-select" id="sel7" name="enterserver">
+                    <option selected disabled>Выберите сервер</option>
+                    <option id="dominant" value="https://unitpay.ru/pay/125981-dd3f4?">Rock</option>
+                </select>
+            </div>
+				<center><form method="post" id="loginForm" onsubmit="return checkForm(this)">
+					<div class="col-md-7" style="float: none !important">
+						<div class="iconinput">
+							<input name="account" id="account" type="text" class="main-inp right-ico username" placeholder="Введите Ваш ник"><i class="input-ico user-ico"><img src="../images/mi-userroom.svg" alt=""></i>
+							<div class="loginwarn nickwarn bad"></div>
+						</div>
+						<div class="iconinput">
+							<input name="sum" id="sum" type="text" class="main-inp right-ico passworde" placeholder="Сумма пополнения"><i class="input-ico pass-ico"><img src="../images/credit-cards-payment.svg" alt=""></i>
+							<div class="loginwarn summwarn bad"></div>
+						</div>
+						<input type="submit" value="Пополнить счёт" class="main-button wide log-in-but">
+					</div>
+				</form></center>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="burgermainmenu" data-keyboard="false" data-backdrop="static" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content textcenter">
+            <ul class="main-menu modaling">
+                <li>
+                    <a href="../index.html"><img src="../images/ico-pay-home.svg"> Главная</a>
+                </li>
+                <li>
+                    <a href="moscow-rp.tk" target="_blank"><img src="../images/mi-forum.svg"> Форум</a>
+                </li>
+                <li>
+                    <a href="../login/index.html"><img src="../images/mi-userroom.svg"> Личный&nbsp;кабинет</a>
+                </li>
+                <li>
+                    <a href="index.html"><img src="../images/mi-donate.svg"> Донат</a>
+                </li>
+                <li>
+                    <a href="../how-to-start/index.html"><img src="../images/mi-how.svg"> Как&nbsp;начать&nbsp;играть</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://etrp.ru/assets/js/toastr.min.js"></script>
+<script src="http://etrp.ru/assets/js/donate.js"></script>
+<script src="http://etrp.ru/assets/js/bootstrap.min.js"></script>
+<script src="http://etrp.ru/assets/js/jquery.toTop.min.js"></script>
+<script src="http://etrp.ru/assets/js/script_all.js"></script>
+</body>
+</html>

@@ -1,84 +1,101 @@
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="css/index.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<script type='text/javascript' src='http://samp-stats.ru/web/api-12173.js'></script>
-	<script>
-		 new WOW().init();
-	</script>
-
-	<title>Rio Role Play</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>First Role Play - smlq design</title>
+	
+	<!-- VK Widget -->
+	<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
+	
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- Main css -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- Animations -->
+	<link rel="stylesheet" href="css/anims/animate.min.css">
 </head>
 <body>
-	﻿		                		<div class="container head">
-			<div class="col-md-4 wow fadeInLeft" data-wow-delay="1s">
-				<h3>Личный кабинет</h3><br>
-				<a class="hlink hl-left" href="http://play-force.ru/">Перейти к UCP</a>
+	<ul id="menu" class="animated fadeInDown">
+		<div class="logo"><img src="img/logo_menu.png"></div>
+		<li><a href="/">Главная</a></li>
+		<li><a href="http://play-force.ru/">Новости</a></li>
+		<li><a href="http://play-force.ru/" target="_blank">Форум</a></li>
+		<li><a href="http://play-force.ru/">Донат</a></li>
+		<li><a href="http://play-force.ru/">Аккаунт</a></li>
+	</ul>
+
+	<div class="container">
+		<div class="header">
+			<img src="img/logo.png" height="25%" width="25%">
+			<h1>Проект на данный момент находится в стадии открытия.<br>
+						Некоторые функции сайта могут быть ограничены до<br>
+						определенного времени.</h1>
+		</div>
+	
+		<div class="content">
+			<h1><center>Как начать играть?</center></h1>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<center><img src="img/step1.png" alt="Gta: San Andreas"></center>
+					<div class="caption">
+						<h3><center>1 шаг:<br>
+							скачать Gta: San Andreas</center></h3>
+						<p><center><a href="#" class="btn btn-default" role="button">Скачать</a></center></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<center><img src="img/step2.png" alt="Gta: San Andreas"></center>
+					<div class="caption">
+						<h3><center>2 шаг:<br>
+							скачать San Andreas MultiPlayer</center></h3>
+						<p><center><a href="#" class="btn btn-default" role="button">Скачать</a></center></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<center><img src="img/step3.png" alt="Gta: San Andreas"></center>
+					<div class="caption">
+						<h3><center>3 шаг:<br>
+							зайти на наш сервер</center></h3>
+						<p><center><a href="#" class="btn btn-default" role="button">Зайти</a></center></p>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 wow fadeInDown"><img src="img/logo.png"></div>
-			<div class="col-md-4 wow fadeInRight" data-wow-delay="1s">
-				<h3>Играть на сервере</h3><br>
-				<a class="hlink hl-right" href="samp://46.174.49.56:7797">Подключиться к серверу</a><br><br><br>
-                                <a class="hlink hl-right"><script type='text/javascript'>document.write(api.players +'/'+ api.maxplayers);</script></a>
+			
+			<h1><center>Мы в социальных сетях:</center></h1>
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div id="vk_groups"></div>
+						<script type="text/javascript">
+						VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", height: "500", color1: '000000', color2: '000000', color3: 'FFFFFF'}, 123403375);
+						</script>
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<div id="vk_groups2"></div>
+						<script type="text/javascript">
+						VK.Widgets.Group("vk_groups2", {mode: 3, width: "auto", height: "500", color1: '000000', color2: 'FFFFFF', color3: 'FFFFFF'}, 123813143);
+						</script>						
+				</div>
+			</div>
+			<div class="footer">
+			<a href="http://play-force.ru/" target="_blank">PLAY-FORCE.RU</a>, 2016
 			</div>
 		</div>
-		<div class="container nav wow fadeInDown" data-wow-delay="1s">
-			<a href="index.html">Главная</a>
-			<a href="news.html">Новости</a>
-			<a href="http://play-force.ru/">Форум</a>
-			<a href="donate.php">Донат</a>
-			<a href="http://play-force.ru/">Личный кабинет</a>
-		</div>	
-	<div class="container whyto wow fadeInUpBig" data-wow-delay="2s" data-wow-offset="100">
-		<h1 class="h wow fadeInDown" data-wow-delay="2.5s">     </h1><br>
-		<div class="col-md-2"></div>
-		<div class="col-md-5 wow bounceInLeft" data-wow-delay="3s">
-			<h1>Rio Role Play Игровой сервер SA:MP </h1>
-			<p>Зайдя к нам на сервер, вы начнете новую историю человека, которого сами же и придумаете будь это бизнесмен или же торговец нелегальных трав. Есть и другой путь встать на страже закона и бороться против коррупции и помогать жителям Штата! !</p>
-		</div>
-		<div class="col-md-5 wow bounceInRight" data-wow-delay="3s"><img src=
-		"img/pic.jpg"></div>
 	</div>
-	<div class="container howto">
-		<div class="wow fadeInDown" data-wow-offset="100">
-			<h1>Как начать играть?</h1>
-			<div class="col-md-4 left wow rotateInDownLeft" data-wow-delay="0.5s">
-				<p>Установите</p>
-				<h1>GTA:SA</h1>первое - вам нужно скачать и установить оригинальную Gta San
-				Andreas без модов и дополнений
-				<p></p><br>
-				<a href="files/rutor_org_Grand_Theft_Auto_San_Andreas_torrent.torrent" target="_blank">скачать</a>
-			</div>
-			<div class="col-md-4 center wow flipInY" data-wow-delay="1s">
-				<p>установите</p>
-				<h1>sa-mp</h1>для онлайн игры вам понадобится мультиплеер
-				<p></p><br>
-				<br>
-				<a href="http://sa-mp.com/download.php" target="_blank">скачать</a>
-			</div>
-			<div class="col-md-4 right wow rotateInDownRight" data-wow-delay="1.5s">
-				<p>установите</p>
-				<h1>русификатор</h1>без русификатора комфортно поиграть не получится, так
-				как некоторые русские буквы могут неправильно отображаться
-				<p></p><br>
-				<a href="files/fonts.txd" target="_blank">скачать</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		﻿		<div class="wow fadeIn" data-wow-delay="1s">
-			<img src="img/logo_flat.png"><br>
-			<a href="index.html">Главная</a>
-			<a href="news.html">Новости</a>
-			<a href="http://play-force.ru/">Форум</a>
-			<a href="donate.php">Донат</a>
-			<a href="http://play-force.ru/">Личный кабинет</a>
-			<p>Rio-Rp.ru © 2016 г.</p>
-		</div>	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

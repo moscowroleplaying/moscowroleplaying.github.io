@@ -1,0 +1,8 @@
+Откройте папку framework/web/
+Далее в этой папке найдите файл CController.php
+Найдите строчку if(!preg_match('/(Тут домен.ru)/',$_SERVER['HTTP_HOST'])) {
+И где Тут домен в пишите свое доменное имя.
+
+Пример:
+
+if(!preg_match('/(lalka.ru)/',$_SERVER['HTTP_HOST'])) {

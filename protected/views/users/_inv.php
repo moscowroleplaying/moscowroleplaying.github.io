@@ -1,0 +1,2 @@
+<form class="my-form" action="<? echo Yii::app()->baseUrl; ?>/changename/index" method="post" role="form"><div class="panel panel-danger">  <div class="panel-heading">    <h3 class="panel-title">Упс!</h3>  </div>  <div class="panel-body">    Данный раздел в стадии разработки	<a href="/news" title="Вашы данные"><img src="https://2ip.com.ua/service/ipimg/ip/small16.png"></a>  </div></div>      <div class="container">    <div class="all-news-button">      <a href="/site/login">Перейти в "Информация об аккаунте"</a>    </div></div>
+</form>

@@ -1,0 +1,533 @@
+/* font-family: "ProximaNovaRegular"; */
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("{65bf8f16e083c8b0bb5eb35c2fe6add5}")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBold"; */
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("{bff6ef4c71403a9219da2791f2b5ef6b}")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBlack"; */
+@font-face {
+    font-family: "ProximaNovaBlack";
+    src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+    src: url("{65f2a7ead0f7ee4c7d167bdcc404f106}")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
+    url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+i.icon {
+    height: 14px;
+    width: 22px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+i.icon.icon-vk {
+    background: url("../images/icons/icon-vk.png") no-repeat center;
+}
+
+i.icon.icon-youtube {
+    background: url("../images/icons/icon-youtube.png") no-repeat center;
+}
+
+i.icon.icon-info {
+    background: url("../images/icons/icon-info.png") no-repeat center;
+    height: 23px;
+    width: 23px;
+}
+
+i.icon.icon-agreement {
+    background: url("../images/icons/icon-agreement.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #507299;
+    font-family: "ProximaNovaRegular", arial, san-self;
+    overflow-x: hidden;
+    background: #FFFFFF;
+    background-size: contain;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #676a6c;
+}
+
+.left {
+    float: left;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    /*outline: 1px solid #cc0000;*/
+}
+
+.navbar {
+    background: #000;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 20px 100px -23px #000000;
+}
+
+.navbar .container {
+    padding-top: 10px;
+}
+
+.navbar .nav-menu {
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 240px;
+}
+
+.navbar .nav-menu li {
+    display: inline-block;
+    padding: 0px 8px;
+    margin: 0px 0px;
+}
+
+.navbar .nav-menu li.active a,
+.navbar .nav-menu li:hover a,
+.navbar .nav-menu li:focus a {
+    /*font-family: "ProximaNovaBold";*/
+    color: #ffc800;
+}
+
+.navbar .nav-menu li a {
+    color: #b6b6b6;
+    font-size: 17px;
+    font-family: "ProximaNovaRegular";
+    padding: 10px 4px;
+    text-transform: uppercase;
+}
+
+.navbar .logo {
+    background: url("../images/logo.png") no-repeat center;
+    width: 193px;
+    height: 67px;
+    display: inline-block;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+
+
+.navbar a.forum {
+    display: inline-block;
+    margin-left: 230px;
+    background: url("../images/forum-btn-hover.png") no-repeat center;
+    width: 180px;
+    height: 40px;
+    font-size: 29px;
+    color: transparent;
+}
+
+.navbar a.forum:hover{
+    background: url("../images/forum-btn.png") no-repeat center;
+}
+
+.navbar .social-buttons a {
+    color: #FFFFFF;
+}
+
+.main-header {
+    background: url("../images/head-bg-one.png") no-repeat center top;
+    width: 100%;
+    height: 899px;
+}
+
+.header-text-block {
+    margin-left: 63%;
+    padding-top: 200px;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "ProximaNovaBold";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+hr {
+    background: url("../images/hr-bg.png") no-repeat center;
+    border: none;
+    width: 161px;
+    height: 20px;
+    margin: 10px 0px;
+}
+
+.header-text-block a {
+    background: url("../images/header-btn.png") no-repeat center;
+    width: 222px;
+    height: 53px;
+    display: block;
+    color: transparent;
+}
+
+.header-text-block p {
+    margin-top: 0px;
+    color: #fff;
+    font-size: 29px;
+    font-family: "ProximaNovaRegular";
+}
+
+#content .nowus {
+    margin-top: -170px;
+}
+
+#content .nowus .block {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+
+#content .nowus .block .ip {
+    border: 1px dotted #ffc000;
+    display: block;
+    width: 189px;
+    padding: 10px 29px;
+    text-align: center;
+    border-radius: 13px;
+    font-size: 24px;
+    font-family: "ProximaNovaRegular";
+    color: #ffc000;
+    margin: 0 auto;
+}
+
+#content .nowus .block h2 {
+    font-size: 36px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+    margin: 0px;
+    margin-bottom: -13px;
+}
+
+#content .nowus .block b {
+    font-size: 72px;
+    color: #ffc000;
+    text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+}
+
+#content .nowus .block .connect-btn {
+    background: url("../images/connect-btn.png") no-repeat center;
+    color: transparent;
+    display: block;
+    width: 222px;
+    height: 53px;
+    font-size: 39px;
+    margin: 0 auto;
+}
+
+#content .howtoplay {
+    background: url("../images/how-to-play.png") no-repeat center;
+    height: 1305px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#content .howtoplay .buttons {
+    position: relative;
+}
+
+#content .howtoplay .buttons .download:first-child {
+    position: absolute;
+    top: 347px;
+    left: 217px;
+    width: 178px;
+    height: 51px;
+    font-size: 0px;
+}
+
+#content .howtoplay .buttons .download:nth-child(2) {
+    position: absolute;
+    top: 714px;
+    right: 197px;
+    width: 190px;
+    height: 51px;
+    font-size: 0px;
+}
+
+#content .howtoplay .buttons .connect {
+    position: absolute;
+    top: 1091px;
+    left: 170px;
+    width: 195px;
+    height: 42px;
+    font-size: 23px;
+    font-family: "ProximaNovaRegular";
+    color: #000;
+    padding-left: 58px;
+    padding-top: 10px;
+}
+
+#content .news {
+    background: url("../images/news-bg.png") no-repeat center;
+    height: 813px;
+}
+
+#content .news .header-text-block {
+    width: 600px;
+    margin-left: 53%;
+}
+
+#content .news .news-btn {
+    background: url("../images/news-more.png") no-repeat center;
+    width: 246px;
+    height: 55px;
+    display: block;
+    color: transparent;
+}
+
+#content .news .news-btn:hover {
+    background-image: url("../images/news-more-active.png");
+}
+
+#content .social-block {
+    background: url("../images/social-block.png") no-repeat center;
+    height: 392px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#content .social-block .buttons {
+    position: relative;
+}
+
+#content .social-block .buttons .join:first-child {
+    position: absolute;
+    top: 283px;
+    left: 255px;
+    width: 233px;
+    height: 46px;
+    font-size: 0px;
+}
+
+#content .social-block .buttons .join:nth-child(2) {
+    position: absolute;
+    top: 283px;
+    right: 273px;
+    width: 233px;
+    height: 46px;
+    font-size: 0px;
+}
+
+#content .donate-page {
+    margin-top: 100px;
+    background: url("../images/donate-bg-one.png") no-repeat center;
+    width: 100%;
+    height: 769px;
+}
+
+#content .donate-page .container {
+    position: relative;
+}
+
+#content .donate-page form {
+    position: absolute;
+    top: 305px;
+    left: 405px;
+    text-align: right;
+}
+
+#content .donate-page form input {
+    display: block;
+    background: transparent;
+}
+
+#content .donate-page form input:focus,
+#content .donate-page form input:hover {
+    border: none;
+}
+
+#content .donate-page form input::-webkit-input-placeholder,
+#content .donate-page form input:-moz-placeholder {
+    color: #fff;
+}
+
+#content .donate-page form select.donate-server {
+    background: url("../images/input-donate-server.png") no-repeat top left;
+    width: 338px;
+    height: 56px;
+    font-size: 24px;
+    font-family: "ProximaNovaRegular";
+    padding-left: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+select option{
+
+  
+    color: black;
+
+}
+
+
+#content .donate-page form input.donate-name {
+    background: url("../images/input-donate-name.png") no-repeat top left;
+    width: 288px;
+    height: 56px;
+    font-size: 24px;
+    font-family: "ProximaNovaRegular";
+    padding-left: 50px;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#content .donate-page form input.donate-sum {
+    background: url("../images/input-donate-sum.png") no-repeat top left;
+    width: 288px;
+    height: 56px;
+    font-size: 24px;
+    font-family: "ProximaNovaRegular";
+    padding-left: 50px;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#content .donate-page form input.donate-btn {
+    background: url("../images/donate-btn.png") no-repeat center;
+    width: 236px;
+    height: 56px;
+    color: transparent;
+    border: none;
+    margin-left: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+#content .donate-page .donate-info {
+    position: absolute;
+    top: 310px;
+    right: 35px;
+    width: 360px;
+    font-size: 21px;
+    font-family: "ProximaNovaRegular";
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#content .donate-page .donate-info a {
+    display: inline-block;
+    color: #fff;
+    font-size: 29px;
+    font-family: "ProximaNovaRegular";
+}
+
+#content .donate-page .donate-info a:hover {
+   color: #ffc800;
+}
+
+
+#footer {
+    margin-top: 150px;
+    background: #000;
+}
+
+#footer .navbar {
+    height: 150px;
+}
+
+#footer .navbar .social-networks {
+    display: inline-block;
+    width: 260px;
+    margin-bottom: -75px;
+    position: absolute;
+}
+
+#footer .navbar .social-networks p {
+    font-size: 19px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer .navbar .social-networks a {
+    color: #fff;
+    display: inline-block;
+}
+
+#footer .navbar .social-networks a:hover {
+    color: #ffc800;
+}
+
+
+
+
+#footer .navbar .nav-menu {
+    margin-left: 37%;
+}
+
+#footer .social-links {
+    height: 80px;
+}
+#footer .social-links a:hover {
+    color: #ffc800;
+}
+
+#footer .social-links a {
+    display: inline-block;
+    margin-top: 31px;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+}

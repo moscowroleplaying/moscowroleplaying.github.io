@@ -10,29 +10,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand logo" href="index.html#" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                <a class="navbar-brand logo" href="donate.html#" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation"></a>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item mx-4  active ">
+                        <li class="nav-item mx-4 ">
                             <a class="nav-link" href="index.html">Главная</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link"  href="index.html#why">Почему мы</a>
+                            <a class="nav-link"  href="index.html#why" >Почему мы</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link"  href="index.html#community">Мы ВКонтакте</a>
+                            <a class="nav-link"  href="index.html#community" >Мы ВКонтакте</a>
                         </li>
                         <li class="nav-item mx-4 ">
                             <a class="nav-link" href="howto.html">Как начать играть</a>
                         </li>
-                        <li class="nav-item mx-4 ">
+                        <li class="nav-item mx-4  active ">
                             <a class="nav-link" href="donate.html">Магазин</a>
                         </li>
                     </ul>
@@ -42,74 +43,45 @@
     </header>
 
     <main>
-        <div class="promo">
+        <div class="donate">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7 mx-auto">
-                <h1><b>Rocket</b> Station</h1>
-                <p>Вам надоело играть на проектах, сделанных под копирку? Вы устали от неуважения к вам, как к игроку? 
-                    Вас приветствует проект, который заслуживает вас. 
-                    У нас вы найдете собственный город на просторах России, качественный мод-пак автомобилей, который будет включать в себя десятки иномарок, одежду на любой вкус и цвет. 
-                    Ждем вас на <b>Rocket Station!</b></p>
-
-                <a href="index.html#">Начать игру!</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="why" id="why">
-    <div class="container">
-        <h2 class="section-title">Почему именно <b>Rocket Station</b></h2>
-
-        <div class="row blocks">
-            <div class="col-lg-4 text-center">
-                <div class="why-block one mx-auto">
-                    <h5>Уникальный</h5>
-                    <p>Уникальный игровой мод
-                        который понравится каждому игроку!
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center">
-                <div class="why-block two mx-auto">
-                    <h5>Интересный</h5>
-                    <p>Ежедневные мероприятия на сервера с крутыми призами</p>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center">
-                <div class="why-block three mx-auto">
-                    <h5>Современный</h5>
-                    <p>Современный системы сделанные на высшем уровне как и этот сайт!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="mon">
-    <div class="container">
-        <h2 class="section-title">Мониторинг <b>онлайна</b></h2>
         <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="mon-block">
-                    <p class="online">
-                        <b>980</b> / 1000
-                    </p>
+            <div class="col-lg-9 block">
+                <h2 class="section-title">Донат услуги</h2>
 
-                    <span class="server-name">Сервер №1</span>
-                    <a href="index.html#" class="connect">Подключится</a>
-                </div>
+                <form method="POST" id="f-donate">
+                    <div class="alert" style="display: none;">
+                        <b>Ошибка:</b> Указанный профиль не найден
+                    </div>
+
+                    <div class="input-group invalid">
+                        <i class="user"></i>
+                        <input type="text" name="login" placeholder="Введите свой логин">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="cash"></i>
+                        <input type="text" name="sum" placeholder="Введите сумму">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="list"></i>
+                        <select>
+                            <option value="0" disabled selected>Выберите сервер</option>
+                            <option value="1">Server #1</option>
+                            <option value="2">Server #2</option>
+                        </select>
+                    </div>
+
+                    <button>Пополнить</button>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
-<div class="community" id="community">
+<div class="community">
     <div class="container">
-        <h2 class="section-title">Сообщество <b>ВКонтакте</b></h2>
-
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
                 <div class="public d-flex mx-auto">
@@ -146,23 +118,23 @@
                 <div class="col-lg-2">
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="index.html#">Форум</a></li>
+                        <li><a href="donate.html#">Форум</a></li>
                         <li><a href="howto.html">Начать играть</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <ul>
                         <li><a href="donate.html">Магазин</a></li>
-                        <li><a href="index.html#community">ВКонтакте</a></li>
-                        <li><a href="index.html#community">Контакты</a></li>
+                        <li><a href="donate.html#community">ВКонтакте</a></li>
+                        <li><a href="donate.html#community">Контакты</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 d-flex align-items-center justify-content-around">
                     <div class="social-links">
                         <a href="https://vk.com/rocketmta" class="vk"></a>
-                        <a href="index.html#" class="yt"></a>
-                        <a href="index.html#" class="discord"></a>
+                        <a href="donate.html#" class="yt"></a>
+                        <a href="donate.html#" class="discord"></a>
                     </div>
                 </div>
 
@@ -186,5 +158,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="assets/js/common.min.js"></script>
-    </body>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.form.js"></script>
+<script>
+    $("select").niceSelect();
+
+    $('#f-donate').ajaxForm({
+        url: '/donate',
+        dataType: 'text',
+        success: function(data) {
+            console.log(data);
+            data = $.parseJSON(data);
+            switch(data.status) {
+                default:
+                    $(".alert").html("<b>Ошибка:</b> " + data.error);
+                    $(".alert").show();
+                    break;
+                case 'success':
+                    location.href = data.url;
+                    break;
+            }
+        }
+    });
+</script>
+</body>
 </html>
